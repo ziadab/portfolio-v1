@@ -2,6 +2,7 @@
   <div>
     <NavBarUwU />
     <div class="container">
+      <div class="background_top"></div>
       <div class="mini_container">
         <div>
           <div class="myName">Hi! I'm Ziad Abouelfarah</div>
@@ -35,6 +36,11 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.background_top {
+  position: absolute;
+  background: url("~assets/svgs/circle.svg");
+}
+
 .container {
   text-align: center;
   display: flex;
