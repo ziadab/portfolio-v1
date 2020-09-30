@@ -1,8 +1,10 @@
 <template>
   <div>
+    <img src="~@/assets/images/down.svg" alt="Hmm" id="down" />
     <NavBarUwU />
+    <!-- <img class="CircleUp" src="~@/assets/images/CircleUp.png" alt="Hmm" />
+    <img class="CircleDown" src="~@/assets/images/CircleDown.png" alt="Hmm" /> -->
     <div class="container">
-      <div class="background_top"></div>
       <div class="mini_container">
         <div>
           <div class="myName">Hi! I'm Ziad Abouelfarah</div>
@@ -36,11 +38,6 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.background_top {
-  position: absolute;
-  background: url("~assets/svgs/circle.svg");
-}
-
 .container {
   text-align: center;
   display: flex;
@@ -86,5 +83,27 @@ button {
 .AboutMeBtn {
   border: black solid 2px;
   background-color: transparent;
+}
+
+#down {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+  #down {
+    display: none;
+  }
+  .button_section {
+    margin-top: 90px;
+  }
+  button {
+    margin-bottom: 15px;
+  }
+  .projectBtn {
+    padding: 15px 50px;
+  }
 }
 </style>
