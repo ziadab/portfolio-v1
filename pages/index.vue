@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <img src="~@/assets/images/down.svg" alt="Hmm" id="down" />
     <NavBarUwU />
     <!-- <img class="CircleUp" src="~@/assets/images/CircleUp.png" alt="Hmm" />
@@ -34,7 +34,12 @@
 </template>
 
 <script>
-export default {};
+import NavBarUwU from "~/components/UI/NavBarUwU";
+export default {
+  components: {
+    NavBarUwU,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -52,6 +57,10 @@ export default {};
 
 .container div {
   margin-bottom: 1rem;
+}
+
+.page {
+  animation: 1s appear;
 }
 
 .pro {
@@ -104,6 +113,15 @@ button {
   }
   .projectBtn {
     padding: 15px 50px;
+  }
+  .mini_container {
+    margin-top: 150px;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
   }
 }
 </style>
