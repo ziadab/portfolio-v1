@@ -35,7 +35,8 @@
             />
           </div>
           <div class="submit_button">
-            Submit
+            <div class="submit_text">Submit</div>
+            <RightArrow class="submit_arrow" />
           </div>
         </div>
       </div>
@@ -49,6 +50,7 @@ import ButtonsUwU from "~/components/UI/ButtonsUwU";
 import Github from "~/components/UI/Icons/Github.vue";
 import Twitter from "~/components/UI/Icons/Twitter.vue";
 import Instagram from "~/components/UI/Icons/Instagram.vue";
+import RightArrow from "~/assets/images/right_arrow.svg?inline";
 
 export default {
   components: {
@@ -56,7 +58,8 @@ export default {
     ButtonsUwU,
     Github,
     Twitter,
-    Instagram
+    Instagram,
+    RightArrow
   }
 };
 </script>
@@ -75,8 +78,8 @@ export default {
 }
 
 .mini_left_container {
-  padding: 20px 70px;
-  height: 300px;
+  padding: 10px 70px;
+  height: 370px;
   justify-content: space-around;
   display: flex;
   flex-direction: column;
@@ -139,7 +142,16 @@ export default {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  margin-top: 30 px;
+
+  display: flex;
+  align-self: center;
+  .submit_text {
+    margin-top: 30px;
+  }
+
+  .submit_arrow {
+    margin: 22px 15px;
+  }
 }
 
 .find_me {
