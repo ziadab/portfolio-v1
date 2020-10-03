@@ -13,9 +13,11 @@ import Twitter from "~/components/UI/Icons/Twitter.vue";
 import Instagram from "~/components/UI/Icons/Instagram.vue";
 
 export default {
-  Github,
-  Twitter,
-  Instagram
+  components: {
+    Github,
+    Twitter,
+    Instagram
+  }
 };
 </script>
 

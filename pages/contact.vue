@@ -4,8 +4,18 @@
     <div class="container">
       <div class="left_side">
         <div class="mini_left_container">
-          <div class="Header">Let’s collaborate</div>
-          <div class="mail">zain.fake@gmail.com</div>
+          <div>
+            <div class="Header">Let’s collaborate</div>
+            <div class="mail">zain.fake@gmail.com</div>
+          </div>
+          <div class="find_me">
+            <div>Find Me</div>
+            <div class="icons">
+              <Instagram />
+              <Github />
+              <Twitter />
+            </div>
+          </div>
         </div>
         <div></div>
       </div>
@@ -24,6 +34,9 @@
               placeholder="Start typing here"
             />
           </div>
+          <div class="submit_button">
+            Submit
+          </div>
         </div>
       </div>
     </div>
@@ -33,15 +46,22 @@
 <script>
 import NavBarUwU from "~/components/UI/NavBarUwU";
 import ButtonsUwU from "~/components/UI/ButtonsUwU";
+import Github from "~/components/UI/Icons/Github.vue";
+import Twitter from "~/components/UI/Icons/Twitter.vue";
+import Instagram from "~/components/UI/Icons/Instagram.vue";
+
 export default {
   components: {
     NavBarUwU,
     ButtonsUwU,
-  },
+    Github,
+    Twitter,
+    Instagram
+  }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   text-align: center;
   display: flex;
@@ -55,7 +75,11 @@ export default {
 }
 
 .mini_left_container {
-  padding: 70px 70px;
+  padding: 20px 70px;
+  height: 300px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
 
 .mini_right_container {
@@ -73,6 +97,7 @@ export default {
   /* background-color: red; */
   width: 100%;
   height: 100%;
+  display: flex;
 }
 
 .Header {
@@ -107,6 +132,29 @@ export default {
   flex-direction: column;
   margin-top: 15px;
   width: 60%;
+}
+
+.submit_button {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 30 px;
+}
+
+.find_me {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 10px;
+  width: 130px;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
