@@ -1,0 +1,187 @@
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 110px);
+  font-size: 48px;
+  font-family: "Metropolis";
+  font-weight: 300;
+  text-align: left;
+}
+
+.mini_left_container {
+  padding: 10px 70px;
+  height: 370px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini_right_container {
+  padding: 60px 0px;
+}
+
+.left_side {
+  /* background-color: burlywood; */
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.right_side {
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.Header {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.072em;
+}
+
+.mail {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.say_hello {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.name_email {
+  margin-top: 20px;
+}
+
+.subject_message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 60%;
+}
+
+.submit_button {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  display: flex;
+  align-self: center;
+  .submit_text {
+    margin-top: 30px;
+  }
+
+  .submit_arrow {
+    margin: 22px 15px;
+  }
+}
+
+.find_me {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 10px;
+  width: 130px;
+  justify-content: space-between;
+}
+
+.line {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-top: -120px;
+  }
+
+  .left_side {
+    height: 0;
+  }
+
+  .mini_left_container {
+    height: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .find_me {
+    display: none;
+  }
+
+  .right_side {
+    margin-top: 100px;
+    height: 0;
+  }
+
+  .mail {
+    text-align: center;
+  }
+  .mini_right_container {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .say_hello {
+    text-align: center;
+  }
+
+  .name_email {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .submit_button {
+    justify-content: center;
+  }
+
+  .bottom_side {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .line {
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    width: 90%;
+  }
+
+  .find_me_mobile {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .icons {
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+}

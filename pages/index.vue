@@ -37,91 +37,9 @@
 import NavBarUwU from "~/components/UI/NavBarUwU";
 export default {
   components: {
-    NavBarUwU,
-  },
+    NavBarUwU
+  }
 };
 </script>
 
-<style lang="scss" scoped>
-.container {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 110px);
-  font-size: 48px;
-  font-family: "Metropolis";
-  font-weight: 300;
-  flex-direction: column;
-}
-
-.container div {
-  margin-bottom: 1rem;
-}
-
-.page {
-  animation: 1s appear;
-}
-
-.pro {
-  height: 72px;
-}
-
-.typing {
-  font-size: 64px;
-  font-family: "Metropolis";
-  font-weight: 700;
-  line-height: 72px;
-}
-
-button {
-  padding: 12px 38px;
-  border-radius: 24px;
-  border: none;
-  font-size: 24px;
-  font-family: "Metropolis";
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.projectBtn {
-  background-color: black;
-  color: white;
-}
-
-.AboutMeBtn {
-  border: black solid 2px;
-  background-color: transparent;
-}
-
-#down {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-@media screen and (max-width: 600px) {
-  #down {
-    display: none;
-  }
-  .button_section {
-    margin-top: 90px;
-  }
-  button {
-    margin-bottom: 15px;
-  }
-  .projectBtn {
-    padding: 15px 50px;
-  }
-  .mini_container {
-    margin-top: 150px;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-}
-</style>
+<style src="./index.scss" lang="scss" scoped></style>
