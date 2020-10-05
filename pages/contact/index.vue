@@ -23,13 +23,13 @@
         <div class="mini_right_container">
           <div class="say_hello">Say Hello</div>
           <div class="name_email">
-            <ButtonsUwU label="name" placeholder="Your name" />
-            <ButtonsUwU label="email" placeholder="Email address" />
+            <InputsUwU label="name" placeholder="Your name" />
+            <InputsUwU label="email" placeholder="Email address" />
           </div>
           <div class="subject_message">
-            <ButtonsUwU label="subject" placeholder="Your subject" />
-            <ButtonsUwU
-              style="margin-top: 15px"
+            <InputsUwU label="subject" placeholder="Your subject" />
+            <InputsUwU
+              style="margin-top: 40px"
               label="Message"
               placeholder="Start typing here"
             />
@@ -53,7 +53,7 @@
 
 <script>
 import NavBarUwU from "~/components/UI/NavBarUwU";
-import ButtonsUwU from "~/components/UI/ButtonsUwU";
+import InputsUwU from "~/components/UI/InputsUwU.vue";
 import Github from "~/components/UI/Icons/Github.vue";
 import Twitter from "~/components/UI/Icons/Twitter.vue";
 import Instagram from "~/components/UI/Icons/Instagram.vue";
@@ -62,7 +62,7 @@ import RightArrow from "~/assets/images/right_arrow.svg?inline";
 export default {
   components: {
     NavBarUwU,
-    ButtonsUwU,
+    InputsUwU,
     Github,
     Twitter,
     Instagram,

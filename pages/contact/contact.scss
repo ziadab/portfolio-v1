@@ -11,15 +11,15 @@
 }
 
 .mini_left_container {
-  padding: 10px 70px;
-  height: 370px;
-  justify-content: space-around;
+  padding: 70px 70px 0px;
+  height: 350px;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
 
 .mini_right_container {
-  padding: 60px 0px;
+  padding: 80px 0 0px 40px;
 }
 
 .left_side {
@@ -40,8 +40,7 @@
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 52px;
   letter-spacing: 0.072em;
 }
 
@@ -49,7 +48,7 @@
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   /* identical to box height */
 
   color: rgba(0, 0, 0, 0.7);
@@ -59,18 +58,18 @@
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .name_email {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .subject_message {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 40px;
   width: 60%;
 }
 
@@ -79,7 +78,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-
+  margin-top: 15px;
   display: flex;
   align-self: center;
   .submit_text {
@@ -95,8 +94,7 @@
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  margin-top: 15px;
+  font-size: 16px;
 }
 
 .icons {

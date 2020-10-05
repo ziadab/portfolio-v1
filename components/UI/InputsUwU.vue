@@ -16,8 +16,8 @@
 export default {
   props: {
     label: String,
-    placeholder: String
-  }
+    placeholder: String,
+  },
 };
 </script>
 
@@ -31,8 +31,7 @@ label {
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  margin-left: 8px;
+  font-size: 16px;
 }
 
 .inputfield {
@@ -41,7 +40,7 @@ label {
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 14px;
   margin-top: 10px;
 }
@@ -60,7 +59,7 @@ label {
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
 
