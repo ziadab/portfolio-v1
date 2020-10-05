@@ -83,6 +83,12 @@ label {
   transition: all 0.15s linear;
 }
 
+@media screen and (max-width: 600px) {
+  .inputfield {
+    width: 80%;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

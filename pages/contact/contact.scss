@@ -148,13 +148,16 @@
     padding: 0 20px;
   }
 
+  .Header {
+    font-size: 24px;
+  }
+
   .say_hello {
     text-align: center;
   }
 
   .name_email {
     display: flex;
-    justify-content: space-between;
   }
 
   .submit_button {
