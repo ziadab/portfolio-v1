@@ -42,14 +42,10 @@
       </div>
     </div>
     <div class="bottom_side">
-      <hr class="line" />
-      <div>
-        <div class="find_me_mobile">Find Me</div>
-        <div class="icons">
-          <Instagram />
-          <Github />
-          <Twitter />
-        </div>
+      <div class="icons">
+        <Instagram />
+        <Github />
+        <Twitter />
       </div>
     </div>
   </div>
@@ -70,8 +66,8 @@ export default {
     Github,
     Twitter,
     Instagram,
-    RightArrow
-  }
+    RightArrow,
+  },
 };
 </script>
 
