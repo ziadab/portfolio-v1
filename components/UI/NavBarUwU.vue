@@ -19,6 +19,10 @@ export default {};
 </script>
 
 <style scoped>
+div {
+  width: 100%;
+}
+
 .nav-links {
   margin: 0;
   padding: 1rem 0;
