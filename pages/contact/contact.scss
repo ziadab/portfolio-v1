@@ -127,6 +127,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    margin-right: 15px;
   }
 
   .find_me {
@@ -138,22 +139,14 @@
     height: 0;
   }
 
-  .mail {
-    text-align: center;
-  }
   .mini_right_container {
     width: 100%;
-    padding: 0;
     align-items: center;
     padding: 0 20px;
   }
 
   .Header {
-    font-size: 24px;
-  }
-
-  .say_hello {
-    text-align: center;
+    font-size: 36px;
   }
 
   .name_email {
@@ -194,5 +187,18 @@
 @media screen and (max-height: 700px) {
   .bottom_side {
     margin-top: 225px;
+  }
+
+  .mini_left_container {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .Header {
+    font-size: 24px;
+  }
+
+  .say_hello {
+    font-size: 18px;
   }
 }
