@@ -30,22 +30,26 @@
               <li>React.js</li>
             </div>
             <div class="skills_column">
-              <li>JavaScript</li>
-              <li>MongoDb</li>
-              <li>React.js</li>
+              <li>Python</li>
+              <li>HTML5/CSS3</li>
+              <li>Vue.js</li>
             </div>
             <div class="skills_column">
-              <li>JavaScript</li>
-              <li>MongoDb</li>
+              <li>NodeJs</li>
+              <li>Git</li>
             </div>
             <div class="skills_column">
-              <li>JavaScript</li>
-              <li>MongoDb</li>
+              <li>Express</li>
+              <li>Flask</li>
             </div>
           </div>
         </div>
+        <hr />
       </section>
-      <section class="need_a_developer"></section>
+      <section class="need_a_developer">
+        <h1>NEED A DEVELOPER</h1>
+        <nuxt-link to="/contact" tag="h3">Let's work together</nuxt-link>
+      </section>
     </div>
   </div>
 </template>
