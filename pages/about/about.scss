@@ -47,7 +47,7 @@ hr {
 }
 
 #skills {
-  height: 75vh;
+  height: 60vh;
 }
 
 .skills {
@@ -72,5 +72,29 @@ hr {
     padding: 30px 10px;
     font-weight: 600;
     text-align: center;
+  }
+}
+
+.need_a_developer {
+  padding: 40px 140px 0;
+  text-align: center;
+
+  h1 {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.32em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  h3 {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    margin: 40px 0 90px 0;
+    cursor: pointer;
   }
 }
