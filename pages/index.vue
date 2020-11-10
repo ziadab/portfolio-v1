@@ -37,8 +37,8 @@
 import NavBarUwU from "~/components/UI/NavBarUwU";
 export default {
   components: {
-    NavBarUwU
-  }
+    NavBarUwU,
+  },
 };
 </script>
 

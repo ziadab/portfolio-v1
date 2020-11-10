@@ -12,6 +12,7 @@
     "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5",
+    "vue-progressbar": "^0.7.5",
     "vue-smooth-scrollbar": "^0.1.2",
     "vue-typed-js": "^0.1.2"
   },
