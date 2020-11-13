@@ -14,17 +14,17 @@ export default {
   css: ["@/assets/scss/main.scss"],
 
   loading: {
-    color: "blue",
-    height: "150px",
-    throttle: 0
+    color: "black",
+    height: "5px",
+    throttle: 0,
+    failedColor: "#E32524"
   },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     { src: "~/plugins/vue-typed.js", ssr: false },
     { src: "~/plugins/toUpperCase.js", ssr: false },
-    { src: "~/plugins/smoth-scrollbar.js", ssr: false },
-    { src: "~/plugins/progressbar.js", ssr: false }
+    { src: "~/plugins/smoth-scrollbar.js", ssr: false }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
