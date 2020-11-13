@@ -84,7 +84,8 @@ label {
 }
 
 @media screen and (max-width: 600px) {
-  .inputfield {
+  .inputfield,
+  .separator {
     width: 80%;
   }
 }

@@ -149,8 +149,13 @@
     font-size: 36px;
   }
 
+  .mail {
+    text-align: center;
+  }
+
   .name_email {
     display: flex;
+    justify-content: space-between;
   }
 
   .submit_button {
