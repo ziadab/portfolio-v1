@@ -98,3 +98,48 @@ hr {
     cursor: pointer;
   }
 }
+
+@media screen and (max-height: 700px) {
+  .about {
+    padding: 80px 20px 0;
+  }
+
+  h5,
+  .paragraph,
+  .young {
+    text-align: left;
+  }
+
+  .paragraph {
+    line-height: normal;
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  .young {
+    margin-top: 30px;
+  }
+
+  #skills {
+    height: 50vh;
+  }
+
+  .skills {
+    padding: 40px 20px 0;
+    h5 {
+      text-align: center;
+    }
+  }
+
+  .skills_column {
+    li {
+      padding: 30px 0;
+    }
+  }
+
+  .need_a_developer {
+    padding: 40px 20px 0;
+    h3 {
+      font-size: 56px;
+    }
+  }
+}
