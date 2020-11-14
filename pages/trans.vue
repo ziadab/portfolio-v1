@@ -8,19 +8,12 @@
 <script>
 export default {
   transition: {
-    name: "home",
+    enterActiveClass: "animated fadeInUp",
+    leaveActiveClass: "animated fadeOutDown",
     mode: "out-in",
   },
 };
 </script>
 
 <style>
-.home-enter-active,
-.home-leave-active {
-  transition: opacity 0.5s;
-}
-.home-enter,
-.home-leave-active {
-  opacity: 0;
-}
 </style>

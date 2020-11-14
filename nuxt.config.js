@@ -13,7 +13,7 @@ export default {
         rel: "stylesheet",
         type: "text/css",
         href:
-          "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+          "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       }
     ]
   },
@@ -45,8 +45,15 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    "bootstrap-vue/nuxt"
   ],
+
+  // https://bootstrap-vue.org/docs#using-custom-bootstrap-scss
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  },
 
   styleResources: {
     scss: ["./assets/scss/*.scss"]

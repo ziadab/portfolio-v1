@@ -39,6 +39,28 @@ export default {
   components: {
     NavBarUwU,
   },
+  // transition: {
+  //   enterActiveClass: "animated fadeInUp",
+  //   leaveActiveClass: "animated fadeInUp",
+  //   mode: "out-in",
+  // },
+  transition(to, from) {
+    // console.log({ to });
+    // console.log({ from });
+    if (to.name == "about") {
+      return {
+        enterActiveClass: "animated fadeInUp",
+        leaveActiveClass: "animated fadeInUp",
+        mode: "out-in",
+      };
+    } else if (to.name == "projects") {
+      return {
+        enterActiveClass: "animated fadeOutDown",
+        leaveActiveClass: "animated fadeOutDown",
+        mode: "out-in",
+      };
+    }
+  },
 };
 </script>
 
