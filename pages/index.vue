@@ -50,12 +50,12 @@ export default {
     if (to.name == "about") {
       return {
         enterActiveClass: "animated fadeInUp",
-        leaveActiveClass: "animated fadeInUp",
+        leaveActiveClass: "animated fadeOutUp",
         mode: "out-in",
       };
     } else if (to.name == "projects") {
       return {
-        enterActiveClass: "animated fadeOutDown",
+        enterActiveClass: "animated fadeInDown",
         leaveActiveClass: "animated fadeOutDown",
         mode: "out-in",
       };
