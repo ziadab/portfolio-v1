@@ -59,6 +59,18 @@ export default {
         leaveActiveClass: "animated fadeOutDown",
         mode: "out-in",
       };
+    } else if (from && from.name == "about") {
+      return {
+        leaveActiveClass: "animated fadeOutUp",
+        enterActiveClass: "animated fadeInDown",
+        mode: "out-in",
+      };
+    } else if (from && from.name == "projects") {
+      return {
+        leaveActiveClass: "animated fadeOutDown",
+        enterActiveClass: "animated fadeInDown",
+        mode: "out-in",
+      };
     }
   },
 };

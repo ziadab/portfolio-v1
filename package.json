@@ -13,7 +13,6 @@
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.5",
-    "nuxt-buefy": "^0.4.4",
     "vue-smooth-scrollbar": "^0.1.2",
     "vue-typed-js": "^0.1.2"
   },

@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thla {
+  background-color: salmon;
+  width: calc(50% - 30px);
+  margin: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .thla {
+    width: 100%;
+  }
+}

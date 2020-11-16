@@ -45,8 +45,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/style-resources",
-    "nuxt-buefy"
+    "@nuxtjs/style-resources"
   ],
 
   styleResources: {
