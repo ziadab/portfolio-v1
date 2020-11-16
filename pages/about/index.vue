@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBarUwU />
+    <NavBarUwU> </NavBarUwU>
     <div>
       <section id="about">
         <div class="about">

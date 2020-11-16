@@ -46,14 +46,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/style-resources",
-    "bootstrap-vue/nuxt"
+    "nuxt-buefy"
   ],
-
-  // https://bootstrap-vue.org/docs#using-custom-bootstrap-scss
-  bootstrapVue: {
-    bootstrapCSS: false, // Or `css: false`
-    bootstrapVueCSS: false // Or `bvCSS: false`
-  },
 
   styleResources: {
     scss: ["./assets/scss/*.scss"]

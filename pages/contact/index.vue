@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBarUwU />
+    <NavBarUwU> </NavBarUwU>
     <div class="container">
       <div class="left_side">
         <div class="mini_left_container">

@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <img src="~@/assets/images/down.svg" alt="Hmm" id="down" />
-    <NavBarUwU />
+    <NavBarUwU> </NavBarUwU>
     <!-- <img class="CircleUp" src="~@/assets/images/CircleUp.png" alt="Hmm" />
     <img class="CircleDown" src="~@/assets/images/CircleDown.png" alt="Hmm" /> -->
     <div class="container">

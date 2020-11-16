@@ -1,21 +1,52 @@
 <template>
   <div>
-    <navbar>
+    <div>
       <ul class="nav-links">
         <li class="nav-item">
-          <nuxt-link to="/"><Logo /></nuxt-link>
+          <nuxt-link @click.native="thla" to="/"><Logo /></nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link to="/">MENU</nuxt-link>
         </li>
         <MenuLogo />
       </ul>
-    </navbar>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+import Logo from "~/components/UI/Logos/Logo";
+import MenuLogo from "~/components/UI/Logos/MenuLogo";
+
+export default {
+  name: "NavBarUwU",
+  components: {
+    Logo,
+    MenuLogo,
+  },
+  transition(to, from) {
+    console.log({ to });
+    console.log({ from });
+    // if (to.name == "about") {
+    //   return {
+    //     enterActiveClass: "animated fadeInUp",
+    //     leaveActiveClass: "animated fadeOutUp",
+    //     mode: "out-in",
+    //   };
+    // } else if (to.name == "projects") {
+    //   return {
+    //     enterActiveClass: "animated fadeInDown",
+    //     leaveActiveClass: "animated fadeOutDown",
+    //     mode: "out-in",
+    //   };
+    // }
+  },
+  methods: {
+    thla: function () {
+      console.log("thla kana hona");
+    },
+  },
+};
 </script>
 
 <style scoped>
