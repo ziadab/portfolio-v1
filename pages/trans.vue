@@ -10,6 +10,16 @@
         <Skill language="nodejs" />
         <Skill language="python" />
       </div>
+
+      <div class="description">
+        <h2 class="descriptionTitle">Description</h2>
+        <p class="content">Nam et erat fringilla, vulputate nisi quis, viverra nibh. Pellentesque dolor sem, pulvinar ut varius ut, hendrerit sed lorem. Nulla a sem sed urna tempus dapibus. Integer gravida, metus eget facilisis congue, orci tortor ornare lectus, non malesuada velit tellus vitae arcu. Quisque consectetur diam velit, at sodales odio venenatis id. Aenean in auctor lorem. Quisque eu maximus nunc, sit amet ultricies ante. Fusce sollicitudin, lectus vel congue rutrum, ex quam congue arcu, at ullamcorper eros </p>
+      </div>
+
+      <div class="whatDidILearn">
+        <h2 class="whatDidILearnTitle">What Did I Learn ?</h2>
+        <p class="content">Nam et erat fringilla, vulputate nisi quis, viverra nibh. Pellentesque dolor sem, pulvinar ut varius ut, hendrerit sed lorem. Nulla a sem sed urna tempus dapibus. Integer gravida, metus eget facilisis congue, orci tortor ornare lectus, non malesuada velit tellus vitae arcu. Quisque consectetur diam velit, at sodales odio venenatis id. Aenean in auctor lorem. Quisque eu maximus nunc, sit amet ultricies ante. Fusce sollicitudin, lectus vel congue rutrum, ex quam congue arcu, at ullamcorper eros </p>
+      </div>
     </div>
   </div>
 </template>
@@ -52,7 +62,7 @@ export default {
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 36px;
   padding-top: 50px;
 }
 
@@ -68,6 +78,46 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 1em;
+  margin-top: 40px;
 }
+
+.description {
+  margin-top: 50px;
+
+  .content {
+    font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  }
+}
+
+.descriptionTitle {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 0px;
+}
+
+.whatDidILearn {
+  margin: 50px 0 70px 0;
+
+  .content {
+    font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  }
+}
+
+.whatDidILearnTitle {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 0px;
+
+}
+
 </style>
