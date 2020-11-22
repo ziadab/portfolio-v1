@@ -1,6 +1,7 @@
 section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project_page {
@@ -24,15 +25,8 @@ hr {
   height: 1px;
   background: #e7e8e9;
 }
-
-.thla {
-  background-color: salmon;
-  width: calc(50% - 30px);
-  margin: 15px;
-}
-
 @media screen and (max-width: 600px) {
-  .thla {
-    width: 100%;
+  .project_page {
+    padding: 70px 0px 20px;
   }
 }

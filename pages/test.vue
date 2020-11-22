@@ -4,6 +4,14 @@
     <Github />
     <Twitter />
     <Instagram />
+    <div class="skills">
+      <Skill language="nodejs"></Skill>
+      <Skill language="vuejs"></Skill>
+      <Skill language="python"></Skill>
+      <Skill language="html"></Skill>
+      <Skill language="git"></Skill>
+    </div>
+
     <div class="banner"></div>
   </div>
 </template>
@@ -12,6 +20,7 @@
 import Github from "~/components/UI/Icons/Github.vue";
 import Twitter from "~/components/UI/Icons/Twitter.vue";
 import Instagram from "~/components/UI/Icons/Instagram.vue";
+import Skill from "~/components/UI/SkillsCard/SkillsCard.vue";
 import anime from "animejs";
 
 export default {
@@ -19,6 +28,7 @@ export default {
     Github,
     Twitter,
     Instagram,
+    Skill,
   },
   methods: {
     animatesircles() {
@@ -42,5 +52,12 @@ export default {
   height: 50px;
   width: 50px;
   background-color: aqua;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1em;
 }
 </style>

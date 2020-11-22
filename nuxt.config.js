@@ -14,6 +14,12 @@ export default {
         type: "text/css",
         href:
           "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      },
+      {
+        href:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css",
+        rel: "stylesheet",
+        type: "text/css"
       }
     ]
   },
