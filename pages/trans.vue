@@ -1,7 +1,9 @@
 <template>
   <div class="trans_humain">
     <div class="img animated fadeIn">
-      <RightArrow @click="goBack" class="left_arrow animated fadeI" />
+      <div class="weirdo">
+        <RightArrow @click="goBack" class="left_arrow animated fadeI" />
+      </div>
     </div>
     <div class="text animated fadeInUp">
       <div class="top_side">
@@ -76,6 +78,10 @@ export default {
   height: 100%;
   background-size: cover;
   background-position: 65%;
+}
+
+.weirdo {
+  display: none;
 }
 
 .left_arrow {
@@ -156,5 +162,27 @@ export default {
   font-weight: 500;
   font-size: 28px;
   margin-top: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .trans_humain {
+    flex-direction: column;
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .text {
+    width: auto;
+    padding: 15px;
+    overflow: visible;
+  }
+
+  .weirdo {
+    display: block;
+    height: 60vh;
+  }
 }
 </style>
