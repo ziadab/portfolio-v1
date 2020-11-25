@@ -56,10 +56,10 @@ export default {};
   margin: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .neeko {
     width: 90%;
-    height: 350px;
+    height: 50ù0px;
     margin: 15px auto;
   }
 }

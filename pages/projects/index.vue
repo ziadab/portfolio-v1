@@ -27,6 +27,11 @@ export default {
     NavBarUwU,
     Card,
   },
+  transition: {
+    //enterActiveClass: "animated fadeIn",
+    leaveActiveClass: "animated fadeOut",
+    mode: "out-in",
+  },
 };
 </script>
 
