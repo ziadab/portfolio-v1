@@ -20,6 +20,10 @@
       <i class="devicon-html5-plain"></i>
       <span>Html</span>
     </div>
+    <div class="skill" v-if="language == 'react'">
+      <React class="icon"></React>
+      <span>React</span>
+    </div>
   </div>
 </template>
 
@@ -28,6 +32,7 @@ import Python from "~/assets/images/language/python.svg?inline";
 import NodeJs from "~/assets/images/language/nodejs.svg?inline";
 import VueJs from "~/assets/images/language/vuejs.svg?inline";
 import Git from "~/assets/images/language/git.svg?inline";
+import React from "~/assets/images/language/react.svg?inline";
 
 export default {
   props: ["language"],
@@ -36,6 +41,7 @@ export default {
     Git,
     NodeJs,
     VueJs,
+    React,
   },
 };
 </script>

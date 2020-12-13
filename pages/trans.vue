@@ -7,11 +7,11 @@
     </div>
     <div class="text animated fadeInUp">
       <div class="top_side">
-        <div class="title">NEEKO - The Youtube Converture</div>
+        <div class="title">NEEKO</div>
         <div class="year">2019</div>
       </div>
       <div class="skills">
-        <Skill language="nodejs" />
+        <Skill language="react" />
         <Skill language="python" />
       </div>
 
@@ -60,129 +60,15 @@ export default {
     Skill,
     RightArrow,
   },
+
+  async asyncData({ route, store, params, $axios }) {
+    const data = await $axios.get(
+      "https://camille-portfolio.herokuapp.com/projects"
+    );
+    console.log(data.data);
+  },
 };
 </script> 
 
-<style lang="scss" scoped>
-.trans_humain {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-.img {
-  width: 40%;
-  //position: fixed;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0)),
-    url("https://cdna.artstation.com/p/assets/images/images/027/761/124/large/dawn-ang-dawnbringer-neeko-final.jpg?1592521828")
-      no-repeat;
-  height: 100%;
-  background-size: cover;
-  background-position: 65%;
-}
+<style src="./trans.scss" lang="scss" scoped></style>
 
-.weirdo {
-  display: none;
-}
-
-.left_arrow {
-  transform: rotate(180deg);
-  margin: 15px;
-  cursor: pointer;
-  path {
-    fill: #fff;
-  }
-}
-
-.text {
-  width: 60%;
-  overflow: auto;
-  padding: 30px 30px 30px 60px;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  // position: absolute;
-  // left: 40%;
-}
-
-.title {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  padding-top: 50px;
-}
-
-.year {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  margin-top: 5px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.description {
-  margin-top: 50px;
-
-  .content {
-    font-family: "Metropolis";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-  }
-}
-
-.descriptionTitle {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  margin-top: 0px;
-}
-
-.whatDidILearn {
-  margin: 50px 0 70px 0;
-
-  .content {
-    font-family: "Metropolis";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-  }
-}
-
-.whatDidILearnTitle {
-  font-family: "Metropolis";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  margin-top: 0px;
-}
-
-@media screen and (max-width: 800px) {
-  .trans_humain {
-    flex-direction: column;
-    width: 100%;
-  }
-  .img {
-    width: 100%;
-    height: 90vh;
-  }
-
-  .text {
-    width: auto;
-    padding: 15px;
-    overflow: visible;
-  }
-
-  .weirdo {
-    display: block;
-    height: 60vh;
-  }
-}
-</style>
