@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/trans" tag="div" class="neeko">
+  <nuxt-link to="/trans/" tag="div" class="neeko">
     <div class="thla">
       <div class="up">2019</div>
       <div class="down">NEEKO - THE YOUTUBE CONVERTURE</div>

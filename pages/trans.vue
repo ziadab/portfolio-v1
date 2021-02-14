@@ -61,12 +61,12 @@ export default {
     RightArrow,
   },
 
-  async asyncData({ route, store, params, $axios }) {
-    const data = await $axios.get(
-      "https://camille-portfolio.herokuapp.com/projects"
-    );
-    console.log(data.data);
-  },
+  // async asyncData({ route, store, params, $axios }) {
+  //   const data = await $axios.get(
+  //     "https://camille-portfolio.herokuapp.com/projects"
+  //   );
+  //   console.log(data.data);
+  // },
 };
 </script> 
 

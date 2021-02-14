@@ -1,0 +1,10 @@
+Personal:
+    Spotify-Grabber-Api
+    Grevious-wounds-backend
+    youtube-converter-with-metadata
+    FaceRecognition
+
+Pro: 
+    Hakawaty
+    Castle Music
+    Elmandir Dashboard 

@@ -49,6 +49,7 @@
       <section class="need_a_developer">
         <h1>NEED A DEVELOPER</h1>
         <nuxt-link to="/contact" tag="h3">Let's work together</nuxt-link>
+        <div class="boxi"></div>
       </section>
     </div>
   </div>
